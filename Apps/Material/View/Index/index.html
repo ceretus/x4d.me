@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>食物相克大全_食材百科知识_食物热量表-小食代</title>
+	<meta name="keywords" content="食物相克大全,食材百科知识,食物热量表">
+	<meta name="description" content="小食代为您提供食物相克大全及相宜、各种食材百科知识、食物热量表及营养价值功效、饮食注意事项等等，随时分享与点评您最爱的美食,致力打造中国喜人可口的菜谱做法。">
+	<link rel="stylesheet" href="/Public/Home/css/style.css" />
+	<link rel="stylesheet" href="/Public/Home/css/animate.css" />
+	<link rel="shortcut icon" href="/Public/Home/images/favicon.ico" />
+	<!--[if lt IE 9]>
+	  <script src="/Public/Home/js/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="/Public/Home/js/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!--header-->
+	<?php include dirname(dirname(__FILE__)) . '/Public/header.html'; ?>
+	<!--//header-->
+		
+	<!--main-->
+	<main class="main" role="main">
+		<!--wrap-->
+		<div class="wrap clearfix">
+			<!--breadcrumbs-->
+			<nav class="breadcrumbs">
+				<ul>
+					<li><a href="/" title="Home">首页</a></li>
+					<li>食材</li>
+				</ul>
+			</nav>
+			<!--//breadcrumbs-->
+		
+			<!--content-->
+			<?if($material['cate']):?>
+			<section class="content">
+				<!--row-->
+				<style>
+					.material{padding: 5px;margin-left: 5px;color: #999999;line-height: 38px;}
+					.material_more{padding: 5px;margin-left: 5px;line-height: 38px;}
+				</style>
+				<?foreach($material['cate'] as $key => $data):?>
+				<div class="row">
+					<div class="full-width wow fadeInUp">
+						<div class="container box">
+							<h2><?=$data['name'];?></h2>
+							<?if($data['_child']):?>
+							<nav class="tabs">
+								<ul>
+									<?foreach($data['_child'] as $k => $d):?>
+									<li <?if($k == 0):?>class="active"<?endif;?>><a href="#tab_<?=$d['id'];?>_<?=$k;?>" title="<?=$d['name'];?>"><?=$d['name'];?></a></li>
+									<?endforeach;?>
+								</ul>
+							</nav>
+							<?foreach($data['_child'] as $k => $d):?>
+							<?if($d['_child']):?>
+							<div class="tab-content" index="<?=$k;?>" id="tab_<?=$d['id'];?>_<?=$k;?>" style="<?if($k == 0):?>display: block;<?else:?>display: none;<?endif;?>">
+								<p style="margin-top: 20px;">
+									<?foreach($d['_child'] as $m => $n):?>
+									<?if($m < 18):?>
+									<a class="material" title="<?=$n['name'];?>" href="#"><?=$n['name'];?></a>
+									<?endif;?>
+									<?endforeach;?>
+									<a class="material_more" title="" href="#">更多</a>
+								</p>
+							</div>
+							<?endif;?>
+							<?endforeach;?>
+							<?endif;?>
+						</div>
+					</div>
+				</div>
+				<?endforeach;?>
+				<!--//row-->
+			</section>
+			<?endif;?>
+		</div>
+		<!--//wrap-->
+	</main>
+	<!--//main-->
+	
+	
+	<!--footer-->
+	<?php include dirname(dirname(__FILE__)) . '/Public/footer.html'; ?>
+	<!--//footer-->
+	
+	<!--preloader-->
+	<div class="preloader">
+		<div class="spinner"></div>
+	</div>
+	<!--//preloader-->
+	
+	<script src="/Public/Home/js/jquery-1.11.1.min.js"></script>
+	<script src="/Public/Home/js/jquery.uniform.min.js"></script>
+	<script src="/Public/Home/js/wow.min.js"></script>
+	<script src="/Public/Home/js/jquery.slicknav.min.js"></script>
+	<script src="/Public/Home/js/scripts.js"></script>
+	<script>new WOW().init();</script>
+</body>
+</html>
+
+

@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>美食攻略_菜谱大全_家常菜做法分享交流-小食代</title>
+	<meta name="keywords" content="美食攻略,菜谱大全,家常菜做法,家常菜谱,小食代,菜谱做法" />
+	<meta name="description" content="小食代为您提供经典、优质的中西菜谱做法，涉及各地小吃、精品美食攻略、可口家常菜谱、西餐、精选食材介绍、器具等等，随时分享与点评您最爱的美食,致力打造中国喜人可口的菜谱做法。" />
+	<link rel="stylesheet" href="/Public/Home/css/style.css" />
+	<link rel="stylesheet" href="/Public/Home/css/animate.css" />
+	<link rel="shortcut icon" href="/Public/Home/images/favicon.ico" />
+	<!--[if lt IE 9]>
+	  <script src="/Public/Home/js/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="/Public/Home/js/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body class="home">
+<div class="slicknav_menu"><a class="slicknav_btn slicknav_collapsed" tabindex="0" aria-haspopup="true" href="#"
+							  style="outline: medium none;"><span class="slicknav_menutxt">MENU</span><span
+		class="slicknav_icon"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span
+		class="slicknav_icon-bar"></span></span></a>
+	<nav role="menu" class="slicknav_nav slicknav_hidden" style="display: none;" aria-hidden="true">
+		<ul>
+			<li><a title="Home" href="index.html" role="menuitem"><span>Home</span></a></li>
+			<li class="current-menu-item slicknav_collapsed slicknav_parent"><a class="slicknav_item slicknav_row"
+																				tabindex="-1" aria-haspopup="true"
+																				role="menuitem" href="#"
+																				style="outline: medium none;"><a
+					title="Recipes" href="recipes.html"><span>Recipes</span></a>
+				<span class="slicknav_arrow">►</span></a>
+				<ul role="menu" class="slicknav_hidden" style="display: none;" aria-hidden="true">
+					<li><a title="Recipes 2" href="recipes2.html" role="menuitem" tabindex="-1">Recipes 2</a></li>
+					<li><a title="Recipe" href="recipe.html" role="menuitem" tabindex="-1">Recipe</a></li>
+				</ul>
+			</li>
+			<li class="slicknav_collapsed slicknav_parent"><a class="slicknav_item slicknav_row" tabindex="-1"
+															  aria-haspopup="true" role="menuitem" href="#"
+															  style="outline: medium none;"><a title="Blog"
+																							   href="blog.html"><span>Blog</span></a>
+				<span class="slicknav_arrow">►</span></a>
+				<ul role="menu" class="slicknav_hidden" style="display: none;" aria-hidden="true">
+					<li><a title="Blog post" href="blog_single.html" role="menuitem" tabindex="-1">Blog post</a></li>
+				</ul>
+			</li>
+			<li class="slicknav_collapsed slicknav_parent"><a class="slicknav_item slicknav_row" tabindex="-1"
+															  aria-haspopup="true" role="menuitem" href="#"
+															  style="outline: medium none;"><a title="Pages"
+																							   href="#"><span>Pages</span></a>
+				<span class="slicknav_arrow">►</span></a>
+				<ul role="menu" class="slicknav_hidden" style="display: none;" aria-hidden="true">
+					<li><a title="Left sidebar page" href="left_sidebar.html" role="menuitem" tabindex="-1">Left sidebar
+						page</a></li>
+					<li><a title="Right sidebar page" href="right_sidebar.html" role="menuitem" tabindex="-1">Right
+						sidebar page</a></li>
+					<li><a title="Both sidebars page" href="two_sidebars.html" role="menuitem" tabindex="-1">Both
+						sidebars page</a></li>
+					<li><a title="Full width page" href="full_width.html" role="menuitem" tabindex="-1">Full width
+						page</a></li>
+					<li><a title="Login page" href="login.html" role="menuitem" tabindex="-1">Login page</a></li>
+					<li><a title="Register page" href="register.html" role="menuitem" tabindex="-1">Register page</a>
+					</li>
+					<li><a title="Error page" href="error404.html" role="menuitem" tabindex="-1">Error page</a></li>
+				</ul>
+			</li>
+			<li class="slicknav_collapsed slicknav_parent"><a class="slicknav_item slicknav_row" tabindex="-1"
+															  aria-haspopup="true" role="menuitem" href="#"
+															  style="outline: medium none;"><a title="Features"
+																							   href="#"><span>Features</span></a>
+				<span class="slicknav_arrow">►</span></a>
+				<ul role="menu" class="slicknav_hidden" style="display: none;" aria-hidden="true">
+					<li><a title="Animations" href="animations.html" role="menuitem" tabindex="-1">Animations</a></li>
+					<li><a title="Grid" href="grid.html" role="menuitem" tabindex="-1">Grid</a></li>
+					<li><a title="Shortcodes" href="shortcodes.html" role="menuitem" tabindex="-1">Shortcodes</a></li>
+					<li><a title="Pricing tables" href="pricing.html" role="menuitem" tabindex="-1">Pricing tables</a>
+					</li>
+				</ul>
+			</li>
+			<li><a title="Contact" href="contact.html" role="menuitem"><span>Contact</span></a></li>
+		</ul>
+	</nav>
+</div>
+
+
+<!--header-->
+<?php include dirname(dirname(__FILE__)) . '/Public/header.html'; ?>
+<!--//header-->
+		
+	<!--main-->
+	<main class="main" role="main">
+		<!--intro-->
+		<div class="intro">
+			<figure class="bg"><img src="/Public/Home/images/intro.jpg" alt="" /></figure>
+			
+			<!--wrap-->
+			<div class="wrap clearfix">
+				<!--row-->
+				<div class="row">
+					<article class="three-fourth text wow zoomIn" data-wow-delay=".2s">
+						<p><img src="/Public/Home/images/slide01-04.png" /></p>
+					</article>
+
+				</div>
+				<!--//row-->
+			</div>
+			<!--//wrap-->
+		</div>
+		<!--//intro-->
+		
+		<!--wrap-->
+		<div class="wrap clearfix">
+			<!--row-->
+			<div class="row">
+				<!--content-->
+				<section class="content three-fourth">
+					<!--cwrap-->
+					<div class="cwrap">
+						<!--entries-->
+						<div class="entries row">
+							<!--featured recipe-->
+							<div class="featured two-third wow fadeInLeft">
+								<header class="s-title">
+									<h2 class="ribbon">今日推荐</h2>
+								</header>
+								<article class="entry">
+									<figure>
+										<img src="/Public/Home/images/img2.jpg" alt="" />
+										<figcaption><a href="recipe.html"><i class="ico i-view"></i> <span>View recipe</span></a></figcaption>
+									</figure>
+									<div class="container">
+										<h2><a href="recipe.html">Honey Cake</a></h2>
+										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+										<div class="actions">
+											<div>
+												<a href="#" class="button">See the full recipe</a>
+												<div class="more"><a href="recipes2.html">See past recipes of the day</a></div>
+											</div>
+										</div>
+									</div>
+								</article>
+							</div>
+							<!--//featured recipe-->
+							
+							<!--featured member-->
+							<div class="featured one-third wow fadeInLeft" data-wow-delay=".2s">
+								<header class="s-title">
+									<h2 class="ribbon star">Featured member</h2>
+								</header>
+								<article class="entry">
+									<figure>
+										<img src="/Public/Home/images/avatar1.jpg" alt="" />
+										<figcaption><a href="my_profile.html"><i class="ico i-view"></i> <span>View member</span></a></figcaption>
+									</figure>
+									<div class="container">
+										<h2><a href="my_profile.html">Kimberly C.</a></h2>
+										<blockquote>Traditional dishes and fine bakery products accompanied by beautiful photographs to bend around and attract the tryout! Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</blockquote>
+										<div class="actions">
+											<div>
+												<a href="#" class="button">Check out her recipes</a>
+												<div class="more"><a href="#">See past featured members</a></div>
+											</div>
+										</div>
+									</div>
+								</article>
+							</div>
+							<!--//featured member-->
+						</div>
+						<!--//entries-->
+					</div>
+					<!--//cwrap-->
+				
+					<!--cwrap-->
+					<div class="cwrap">
+						<header class="s-title">
+							<h2 class="ribbon bright">精选菜谱</h2>
+						</header>
+						
+						<!--entries-->
+						<div class="entries row">
+							<!--item-->
+							<div class="entry one-third wow fadeInLeft">
+								<figure>
+									<img src="/Public/Home/images/img6.jpg" alt="" />
+									<figcaption><a href="recipe.html"><i class="ico i-view"></i> <span>View recipe</span></a></figcaption>
+								</figure>
+								<div class="container">
+									<h2><a href="recipe.html">Thai fried rice with fruit and vegetables</a></h2> 
+									<div class="actions">
+										<div>
+											<div class="difficulty"><i class="ico i-medium"></i><a href="#">medium</a></div>
+											<div class="likes"><i class="ico i-likes"></i><a href="#">10</a></div>
+											<div class="comments"><i class="ico i-comments"></i><a href="http://www.themeenergy.com/themes/html/social-chef/recipe.html#comments">27</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--item-->
+							
+							<!--item-->
+							<div class="entry one-third wow fadeInLeft" data-wow-delay=".2s">
+								<figure>
+									<img src="/Public/Home/images/img5.jpg" alt="" />
+									<figcaption><a href="recipe.html"><i class="ico i-view"></i> <span>View recipe</span></a></figcaption>
+								</figure>
+								<div class="container">
+									<h2><a href="recipe.html">Spicy Morroccan prawns with cherry tomatoes</a></h2> 
+									<div class="actions">
+										<div>
+											<div class="difficulty"><i class="ico i-hard"></i><a href="#">hard</a></div>
+											<div class="likes"><i class="ico i-likes"></i><a href="#">10</a></div>
+											<div class="comments"><i class="ico i-comments"></i><a href="http://www.themeenergy.com/themes/html/social-chef/recipe.html#comments">27</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--item-->
+							
+							<!--item-->
+							<div class="entry one-third wow fadeInLeft" data-wow-delay=".4s">
+								<figure>
+									<img src="/Public/Home/images/img8.jpg" alt="" />
+									<figcaption><a href="recipe.html"><i class="ico i-view"></i> <span>View recipe</span></a></figcaption>
+								</figure>
+								<div class="container">
+									<h2><a href="recipe.html">Super easy blueberry cheesecake</a></h2> 
+									<div class="actions">
+										<div>
+											<div class="difficulty"><i class="ico i-easy"></i><a href="#">easy</a></div>
+											<div class="likes"><i class="ico i-likes"></i><a href="#">10</a></div>
+											<div class="comments"><i class="ico i-comments"></i><a href="http://www.themeenergy.com/themes/html/social-chef/recipe.html#comments">27</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--item-->
+							
+							<!--item-->
+							<div class="entry one-third wow fadeInLeft" data-wow-delay=".6s">
+								<figure>
+									<img src="/Public/Home/images/img7.jpg" alt="" />
+									<figcaption><a href="recipe.html"><i class="ico i-view"></i> <span>View recipe</span></a></figcaption>
+								</figure>
+								<div class="container">
+									<h2><a href="recipe.html">Refreshing banana split with a twist for adults</a></h2> 
+									<div class="actions">
+										<div>
+											<div class="difficulty"><i class="ico i-hard"></i><a href="#">hard</a></div>
+											<div class="likes"><i class="ico i-likes"></i><a href="#">10</a></div>
+											<div class="comments"><i class="ico i-comments"></i><a href="http://www.themeenergy.com/themes/html/social-chef/recipe.html#comments">27</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--item-->
+							
+							<!--item-->
+							<div class="entry one-third wow fadeInLeft" data-wow-delay=".8s">
+								<figure>
+									<img src="/Public/Home/images/img3.jpg" alt="" />
+									<figcaption><a href="recipe.html"><i class="ico i-view"></i> <span>View recipe</span></a></figcaption>
+								</figure>
+								<div class="container">
+									<h2><a href="recipe.html">Sushi mania: this is the best sushi you have ever tasted</a></h2> 
+									<div class="actions">
+										<div>
+											<div class="difficulty"><i class="ico i-easy"></i><a href="#">easy</a></div>
+											<div class="likes"><i class="ico i-likes"></i><a href="#">10</a></div>
+											<div class="comments"><i class="ico i-comments"></i><a href="http://www.themeenergy.com/themes/html/social-chef/recipe.html#comments">27</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--item-->
+							
+							<!--item-->
+							<div class="entry one-third wow fadeInLeft" data-wow-delay="1s">
+								<figure>
+									<img src="/Public/Home/images/img4.jpg" alt="" />
+									<figcaption><a href="recipe.html"><i class="ico i-view"></i> <span>View recipe</span></a></figcaption>
+								</figure>
+								<div class="container">
+									<h2><a href="recipe.html">Princess puffs - an old classic at its best</a></h2> 
+									<div class="actions">
+										<div>
+											<div class="difficulty"><i class="ico i-hard"></i><a href="#">hard</a></div>
+											<div class="likes"><i class="ico i-likes"></i><a href="#">10</a></div>
+											<div class="comments"><i class="ico i-comments"></i><a href="http://www.themeenergy.com/themes/html/social-chef/recipe.html#comments">27</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--item-->
+						</div>
+						<!--//entries-->
+					</div>
+					<!--//cwrap-->
+				
+					<!--cwrap-->
+					<div class="cwrap">
+						<h2 class="ribbon bright">最新分享</h2>
+						<!--entries-->
+						<div class="entries row">
+							<!--item-->
+							<div class="entry one-third wow fadeInLeft">
+								<figure>
+									<img src="/Public/Home/images/img12.jpg" alt="" />
+									<figcaption><a href="blog_single.html"><i class="ico i-view"></i> <span>View post</span></a></figcaption>
+								</figure>
+								<div class="container">
+									<h2><a href="blog_single.html">Barbeque party</a></h2> 
+									<div class="actions">
+										<div>
+											<div class="date"><i class="ico i-date"></i><a href="#">22 Dec 2014</a></div>
+											<div class="comments"><i class="ico i-comments"></i><a href="http://www.themeenergy.com/themes/html/social-chef/blog_single.html#comments">27</a></div>
+										</div>
+									</div>
+									<div class="excerpt">
+										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. Lorem ipsum dolor sit amet . . . </p>
+									</div>
+								</div>
+							</div>
+							<!--item-->
+							
+							<!--item-->
+							<div class="entry one-third wow fadeInLeft" data-wow-delay=".2s">
+								<figure>
+									<img src="/Public/Home/images/img11.jpg" alt="" />
+									<figcaption><a href="blog_single.html"><i class="ico i-view"></i> <span>View post</span></a></figcaption>
+								</figure>
+								<div class="container">
+									<h2><a href="blog_single.html">How to make sushi</a></h2> 
+									<div class="actions">
+										<div>
+											<div class="date"><i class="ico i-date"></i><a href="#">22 Dec 2014</a></div>
+											<div class="comments"><i class="ico i-comments"></i><a href="http://www.themeenergy.com/themes/html/social-chef/blog_single.html#comments">27</a></div>
+										</div>
+									</div>
+									<div class="excerpt">
+										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. Lorem ipsum dolor sit amet . . . </p>
+									</div>
+								</div>
+							</div>
+							<!--item-->
+							
+							<!--item-->
+							<div class="entry one-third wow fadeInLeft" data-wow-delay=".4s">
+								<figure>
+									<img src="/Public/Home/images/img10.jpg" alt="" />
+									<figcaption><a href="blog_single.html"><i class="ico i-view"></i> <span>View post</span></a></figcaption>
+								</figure>
+								<div class="container">
+									<h2><a href="blog_single.html">Make your own bread</a></h2> 
+									<div class="actions">
+										<div>
+											<div class="date"><i class="ico i-date"></i><a href="#">22 Dec 2014</a></div>
+											<div class="comments"><i class="ico i-comments"></i><a href="http://www.themeenergy.com/themes/html/social-chef/blog_single.html#comments">27</a></div>
+										</div>
+									</div>
+									<div class="excerpt">
+										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. Lorem ipsum dolor sit amet . . . </p>
+									</div>
+								</div>
+							</div>
+							<!--item-->
+						</div>
+						<!--//entries-->
+					</div>
+					<!--//cwrap-->
+				</section>
+				<!--//content-->
+		
+			
+				<!--right sidebar-->
+				<aside class="sidebar one-fourth">
+					<div class="widget wow fadeInRight">
+						<!--h3>热门分类</h3-->
+						<ul class="boxed">
+							<li class="light"><a href="recipes.html" title="Appetizers"><i class="ico i-appetizers"></i> <span>Apetizers</span></a></li>
+							<li class="medium"><a href="recipes.html" title="Cocktails"><i class="ico i-cocktails"></i> <span>Cocktails</span></a></li>
+							<li class="dark"><a href="recipes.html" title="Deserts"><i class="ico i-deserts"></i> <span>Deserts</span></a></li>
+							
+							<li class="medium"><a href="recipes.html" title="Cocktails"><i class="ico i-eggs"></i> <span>Eggs</span></a></li>
+							<li class="dark"><a href="recipes.html" title="Equipment"><i class="ico i-equipment"></i> <span>Equipment</span></a></li>
+							<li class="light"><a href="recipes.html" title="Events"><i class="ico i-events"></i> <span>Events</span></a></li>
+						
+							<li class="dark"><a href="recipes.html" title="Fish"><i class="ico i-fish"></i> <span>Fish</span></a></li>
+							<li class="light"><a href="recipes.html" title="Ftness"><i class="ico i-fitness"></i> <span>Fitness</span></a></li>
+							<li class="medium"><a href="recipes.html" title="Healthy"><i class="ico i-healthy"></i> <span>Healthy</span></a></li>
+							
+							<li class="light"><a href="recipes.html" title="Asian"><i class="ico i-asian"></i> <span>Asian</span></a></li>
+							<li class="medium"><a href="recipes.html" title="Mexican"><i class="ico i-mexican"></i> <span>Mexican</span></a></li>
+							<li class="dark"><a href="recipes.html" title="Pizza"><i class="ico i-pizza"></i> <span>Pizza</span></a></li>
+							
+							<li class="medium"><a href="recipes.html" title="Kids"><i class="ico i-kids"></i> <span>Kids</span></a></li>
+							<li class="dark"><a href="recipes.html" title="Meat"><i class="ico i-meat"></i> <span>Meat</span></a></li>
+							<li class="light"><a href="recipes.html" title="Snacks"><i class="ico i-snacks"></i> <span>Snacks</span></a></li>
+							
+							<li class="dark"><a href="recipes.html" title="Salads"><i class="ico i-salads"></i> <span>Salads</span></a></li>
+							<li class="light"><a href="recipes.html" title="Storage"><i class="ico i-storage"></i> <span>Storage</span></a></li>
+							<li class="medium"><a href="recipes.html" title="Vegetarian"><i class="ico i-vegetarian"></i> <span>Vegetarian</span></a></li>
+						</ul>
+					</div>
+						
+					<div class="widget wow fadeInRight" data-wow-delay=".2s">
+						<h3>美食知识</h3>
+						<ul class="articles_latest">
+							<li>
+								<a href="blog_single.html">
+									<img src="/Public/Home/images/img9.jpg" alt="" />
+									<h6>How to decorate cookies</h6>
+								</a>
+							</li>
+							<li>
+								<a href="blog_single.html">
+									<img src="/Public/Home/images/img10.jpg" alt="" />
+									<h6>Make your own bread</h6>
+								</a>
+							</li>
+							<li>
+								<a href="blog_single.html">
+									<img src="/Public/Home/images/img11.jpg" alt="" />
+									<h6>How to make sushi</h6>
+								</a>
+							</li>
+							<li>
+								<a href="blog_single.html">
+									<img src="/Public/Home/images/img12.jpg" alt="" />
+									<h6>Barbeque party</h6>
+								</a>
+							</li>
+							<li>
+								<a href="blog_single.html">
+									<img src="/Public/Home/images/img8.jpg" alt="" />
+									<h6>How to make a cheesecake</h6>
+								</a>
+							</li>
+						</ul>
+					</div>
+						
+					<div class="widget members wow fadeInRight" data-wow-delay=".4s">
+						<h3>活跃美食家</h3>
+						<ul class="boxed">
+							<li><div class="avatar"><a href="my_profile.html"><img src="/Public/Home/images/avatar1.jpg" alt="" /><span>Kimberly C.</span></a></div></li>
+							<li><div class="avatar"><a href="my_profile.html"><img src="/Public/Home/images/avatar2.jpg" alt="" /><span>Alex J.</span></a></div></li>
+							<li><div class="avatar"><a href="my_profile.html"><img src="/Public/Home/images/avatar3.jpg" alt="" /><span>Denise M.</span></a></div></li>
+							<li><div class="avatar"><a href="my_profile.html"><img src="/Public/Home/images/avatar9.jpg" alt="" /><span>Jason H.</span></a></div></li>
+							<li><div class="avatar"><a href="my_profile.html"><img src="/Public/Home/images/avatar8.jpg" alt="" /><span>Jennifer W.</span></a></div></li>
+							<li><div class="avatar"><a href="my_profile.html"><img src="/Public/Home/images/avatar4.jpg" alt="" /><span>Anabelle Q.</span></a></div></li>
+							<li><div class="avatar"><a href="my_profile.html"><img src="/Public/Home/images/avatar7.jpg" alt="" /><span>Thomas M.</span></a></div></li>
+							<li><div class="avatar"><a href="my_profile.html"><img src="/Public/Home/images/avatar5.jpg" alt="" /><span>Michelle S.</span></a></div></li>
+							<li><div class="avatar"><a href="my_profile.html"><img src="/Public/Home/images/avatar6.jpg" alt="" /><span>Bryan A.</span></a></div></li>
+						</ul>
+					</div>
+						
+					<div class="widget wow fadeInRight" data-wow-delay=".6s">
+						<h3>合作商广告</h3>
+						<a href="#"><img src="/Public/Home/images/advertisment.jpg" alt="" /></a>
+					</div>
+				</aside>
+
+
+				<!--content-->
+				<section class="content full-width">
+					<div class="icons dynamic-numbers">
+						<header class="s-title wow fadeInDown">
+							<h2 class="ribbon large">小食代数据</h2>
+						</header>
+
+						<!--row-->
+						<div class="row wow fadeInUp">
+							<!--item-->
+							<div class="one-sixth">
+								<div class="container">
+									<i class="ico i-members"></i>
+									<span class="title dynamic-number" data-dnumber="1730">0</span>
+									<span class="subtitle">会员</span>
+								</div>
+							</div>
+							<!--//item-->
+
+							<!--item-->
+							<div class="one-sixth">
+								<div class="container">
+									<i class="ico i-recipes"></i>
+									<span class="title dynamic-number" data-dnumber="1250">0</span>
+									<span class="subtitle">菜谱</span>
+								</div>
+							</div>
+							<!--//item-->
+
+							<!--item-->
+							<div class="one-sixth">
+								<div class="container">
+									<i class="ico i-photos"></i>
+									<span class="title dynamic-number" data-dnumber="5300">0</span>
+									<span class="subtitle">图片</span>
+								</div>
+							</div>
+							<!--//item-->
+
+							<!--item-->
+							<div class="one-sixth">
+								<div class="container">
+									<i class="ico i-posts"></i>
+									<span class="title dynamic-number" data-dnumber="2300">0</span>
+									<span class="subtitle">博文</span>
+								</div>
+							</div>
+							<!--//item-->
+
+							<!--item-->
+							<div class="one-sixth">
+								<div class="container">
+									<i class="ico i-comment"></i>
+									<span class="title dynamic-number" data-dnumber="7400">0</span>
+									<span class="subtitle">评论</span>
+								</div>
+							</div>
+							<!--//item-->
+
+							<!--item-->
+							<div class="one-sixth">
+								<div class="container">
+									<i class="ico i-articles"></i>
+									<span class="title dynamic-number" data-dnumber="1700">0</span>
+									<span class="subtitle">资讯</span>
+								</div>
+							</div>
+							<!--//item-->
+
+						</div>
+						<!--//row-->
+					</div>
+				</section>
+
+				<section class="content full-width">
+					<div class="row">
+						<div class="full-width wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+							<div class="container box">
+								<nav class="tabs">
+									<ul>
+										<li class=""><a title="Tab1" href="#tab1">友情链接</a></li>
+										<li class=""><a title="Tab 2" href="#tab2">合作伙伴</a></li>
+									</ul>
+								</nav>
+								<div id="tab1" class="tab-content" style="display: none;">
+									<p style="margin-top: 20px;">
+										<a href="http://www.400388.com" target="_blank">美文居</a>
+										<a href="http://fanwen.400388.com" target="_blank">范文网</a>
+									</p>
+								</div>
+								<div id="tab2" class="tab-content" style="display: none;">
+									<p style="margin-top: 20px;">
+										<a href="http://www.400388.com" target="_blank">美文摘抄</a>
+										<a href="http://fanwen.400388.com" target="_blank">范文网</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!--//content-->
+			</div>
+			<!--//right sidebar-->
+		</div>
+		<!--//wrap-->
+	</main>
+	<!--//main-->
+	
+	<!--call to action-->
+	<!--section class="cta">
+		<div class="wrap clearfix">
+			<a href="login.html" class="button big white right">Purchase theme</a>
+			<h2>Already convinced? This is a call to action section lorem ipsum dolor sit amet.</h2>
+		</div>
+	</section-->
+	<!--//call to action-->
+	
+	<!--footer-->
+	<?php include dirname(dirname(__FILE__)) . '/Public/footer.html'; ?>
+	<!--//footer-->
+	
+	<!--preloader-->
+	<div class="preloader">
+		<div class="spinner"></div>
+	</div>
+	<!--//preloader-->
+	
+	<script src="/Public/Home/js/jquery-1.11.1.min.js"></script>
+	<script src="/Public/Home/js/jquery.uniform.min.js"></script>
+	<script src="/Public/Home/js/wow.min.js"></script>
+	<script src="/Public/Home/js/jquery.slicknav.min.js"></script>
+	<script src="/Public/Home/js/scripts.js"></script>
+	<script>
+		window.dynamicNumbersBound = false;
+		var wow = new WOW();
+		WOW.prototype.show = function(box) {
+			wow.applyStyle(box);
+			if (typeof box.parentNode !== 'undefined' && hasClass(box.parentNode, 'dynamic-numbers') && !window.dynamicNumbersBound) {
+				bindDynamicNumbers();
+				window.dynamicNumbersBound = true;
+			}
+			return box.className = "" + box.className + " " + wow.config.animateClass;
+		};
+		wow.init();
+		
+		function hasClass(element, cls) {
+			return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+		}
+		
+		function bindDynamicNumbers() {
+			$('.dynamic-number').each(function() {				
+				var startNumber = $(this).text();
+				var endNumber = $(this).data('dnumber');
+				var dynamicNumberControl = $(this);
+				
+				$({numberValue: startNumber}).animate({numberValue: endNumber}, {
+					duration: 4000,
+					easing: 'swing',
+					step: function() { 
+						$(dynamicNumberControl).text(Math.ceil(this.numberValue)); 
+					}
+				});
+			});	
+		}
+		
+	</script>
+</body>
+</html>
+
+
